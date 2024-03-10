@@ -4,11 +4,11 @@ from tkinter import messagebox
 
 def check_rule(ch1, ch2, rules, score):
     if ch1 == ch2:
-        return "Tie!!", score
+        return "Tie -_-", score
     if rules[ch1] == ch2:
-        return "You lost!", 0
+        return "You lost :(", 0
     else:
-        return "You win!", score + 1
+        return "You won :)", score + 1
 
 def play_game(user_choice):
     computer_choice = random.choice(options)
